@@ -63,14 +63,14 @@ class AuthController extends Controller
     if (!$user) {
         return response()->json(['message' => 'Invalid verification code'], 400);
     }
-
-    $activeChannel = ChannelSetting::where('is_active', true)->first();
+    else{
+        $activeChannel = ChannelSetting::where('is_active', true)->first();
 
     if (!$activeChannel) {
         return response()->json(['message' => 'No active channel available'], 400);
     }
-
-    $user->update([
+    else{
+            $user->update([
         'is_verified' => true,
         'email_verified_at' => now(),
         'telegram_channel_url' => $activeChannel->telegram_channel_url,
@@ -90,5 +90,10 @@ class AuthController extends Controller
         'redirect_url' => $user->telegram_channel_url,
         'message' => 'Email verified successfully'
     ]);
+    }
+    }
+    
+
+    
 }
 }
