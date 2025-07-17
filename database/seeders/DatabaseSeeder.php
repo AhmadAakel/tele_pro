@@ -13,7 +13,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([UsersTableSeeder::class]);
         $this->call([SeedersChannelSetting::class]);
-        $this->call([UsersForChannelSeeder::class]);
+        // $this->call([UsersForChannelSeeder::class]);
 
 }
 }
