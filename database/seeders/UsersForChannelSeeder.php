@@ -26,7 +26,7 @@ class UsersForChannelSeeder extends Seeder
                     // Every 3rd user is unverified
                     $user->update([
                         'is_verified' => true,
-                        'email_verified_at' => fake()->dateTimeBetween('-6 months', 'now'),
+                        'email_verified_at' => "17/07/2025",
                         'verification_code' => str_pad(rand(100000, 999999), 6, '0', STR_PAD_LEFT)
                     ]);
                 
