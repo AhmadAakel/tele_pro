@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string("verification_code");
             $table->boolean("is_verified")->default(false);
             $table->boolean("is_admin")->default(false);
-            $table->timestamp('email_verified_at');
+            $table->timestamp('email_verified_at')->nullable();
             $table->string('telegram_channel_url');
             $table->timestamps();
         });
