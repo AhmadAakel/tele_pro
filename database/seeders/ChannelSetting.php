@@ -16,9 +16,9 @@ class ChannelSetting extends Seeder
     {
         ModelsChannelSetting::create([
             
-            'telegram_channel_url' => "https://t.me/channel1",
+            'telegram_channel_url' => "https://t.me/+W0Z2YYibSNw3Zjc8",
             'is_active' => true,
-            'user_count' => 49,
+            'user_count' => 47,
             
         ]);
         

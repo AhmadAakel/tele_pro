@@ -13,7 +13,7 @@ class UsersForChannelSeeder extends Seeder
     public function run(): void
     {
         // Define the channel URL
-        $channelUrl = 'https://t.me/channel1';
+        $channelUrl = 'https://t.me/+W0Z2YYibSNw3Zjc8';
         
         // Create 49 users for the same channel
         User::factory()
