@@ -17,7 +17,7 @@ class UsersForChannelSeeder extends Seeder
         
         // Create 49 users for the same channel
         User::factory()
-            ->count(49)
+            ->count(47)
             ->withChannel($channelUrl)
             ->create()
             ->each(function ($user, $index) {
